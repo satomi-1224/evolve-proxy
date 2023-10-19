@@ -8,10 +8,30 @@
     <script src="./assets/js/lib/jquery.js"></script>
 </head>
 <body>
+    <!-- モーダルエリアここから -->
+    <section id="modalArea" class="modalArea">
+        <div id="modalBg" class="modalBg"></div>
+        <div class="modalWrapper">
+        <div class="modalContents">
+            <div class="cardContents">
+            </div>
+            <div class="btnContents">
+                <button class="drow">ドロー</button>
+                <button class="mulligan">マリガン</button>
+                <button class="reset">リセット</button>
+            </div>
+        </div>
+        <div id="closeModal" class="closeModal">
+            ×
+        </div>
+        </div>
+    </section>
+    <!-- モーダルエリアここまで -->
     <div class="printNone">
         <h1>プロキシ印刷用</h1>
         <details id="menue" open>
             <summary>メニュー</summary>
+            <button id="openModal">初手テスト</button>
             <details id="data">
                 <summary>データ</summary>
                 <button id="importBtn">読み込む</button>
@@ -26,5 +46,6 @@
     <div id="cards"></div>
 
     <script src="./assets/js/proxy.js"></script>
+    <script src="./assets/js/modal.js"></script>
 </body>
 </html>
