@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy_v2</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/lib/jquery.js"></script>
+</head>
+<body>
+    <div class="printNone">
+        <h1>プロキシ印刷用</h1>
+        <details id="menue" open>
+            <summary>メニュー</summary>
+            <details id="data">
+                <summary>データ</summary>
+                <button id="importBtn">読み込む</button>
+                <button id="exportBtn">書き出す</button>
+                <textarea id="importData" cols="30" rows="10"></textarea>
+            </details>
+            <button id="save">セーブ</button>
+            <button id="load">ロード</button>
+            <button class="add">➕</button>
+        </details>
+    </div>
+    <div id="cards"></div>
+
+    <script src="./assets/js/proxy.js"></script>
+</body>
+</html>

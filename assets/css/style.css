@@ -1,0 +1,22 @@
+img {
+    width: 230px;
+    height: 324px;
+}
+.numberInput {
+    width: 40px;
+}
+
+#menue {
+    margin-bottom: 50px;
+    border: 1px solid #000000;
+}
+
+.add {
+    margin: 10px auto;
+}
+
+@media print {
+    .printNone {
+        display: none;
+    }
+}
